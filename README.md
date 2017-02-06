@@ -1,6 +1,7 @@
 # mist-redirect
 
 `npm install`
+
 `node app` 
 
 browse to `localhost:3000` in Mist
