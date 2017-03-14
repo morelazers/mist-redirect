@@ -4,6 +4,7 @@
 <form method="POST" action="/">
 	<input type="submit"  value="Submit">
 </form>
+<div id="message"></div>
 
 <p>This form submits a POST, which results in a redirect to a different URL</p>
 <form method="POST" action="/post">
@@ -12,6 +13,7 @@
 
 <script>
 	$('form').on('submit', function() {
+    $("#message").text('This should disappear')
 		$(this).unbind('submit').submit();
 	})
 </script>
